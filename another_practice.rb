@@ -28,4 +28,16 @@ end
 
 # p hundo
 
+# Write a method that returns an array of every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99)
+def every_other
+  array = []
+  i = 1
+  while i <= 100
+    array << i
+    i += 2
+  end
+  return array
+end
+
+# p every_other
 

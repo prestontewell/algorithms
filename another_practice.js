@@ -14,7 +14,7 @@ function everyOtherIndex(strings) {
   return everyOther;
 }
 
-console.log(everyOtherIndex(["a", "b", "c", "d", "e", "f"]));
+// console.log(everyOtherIndex(["a", "b", "c", "d", "e", "f"]));
 
 
 // Write a function that returns an array of every number from 1 to 100.
@@ -28,3 +28,15 @@ function hundo() {
   return array;
 }
 // console.log(hundo());
+
+// Write a method that returns an array of every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99)
+
+function everyOther() {
+
+  var array = [];
+  for (var i = 1; i <= 100; i += 2) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(everyOther());
