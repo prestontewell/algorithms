@@ -154,5 +154,20 @@ numbers.each do |number|
   sum = number + sum
 end
 
-p sum
+# p sum
+
+# Write a method called 'double-numbers' that takes in an array and retruns a new array with
+# each number doubled. Use an 'each' loop in the method.
+
+def double_numbers(double_numbers)
+  array = []
+  double_numbers.each do |number|
+    number = number * 2
+    array << number  
+  end
+  return array
+end
+
+p double_numbers([4, 1, 3])  #=> [8, 2, 6]
+
 
