@@ -122,7 +122,7 @@ end
 item_amounts = {chair: 5, table: 2}
 # item_amounts { |k, v| item_amounts[k] = v - 2}
 item_amounts[:chair] = 3 
-p item_amounts
+# p item_amounts
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # You received 7 desks to sell. Change the hash to include desks.
 # The final result should be: {chair: 5, table: 2, desk: 7}
@@ -134,3 +134,25 @@ p item_amounts
 
 # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+
+# Refactor the code below using `each`.
+# ```
+# numbers = [1, 2, 4, 2]
+# sum = 0
+# index = 0
+# numbers.length.times do
+#   number = numbers[index]
+#   sum = sum + number
+#   index = index + 1
+# end
+# p sum
+
+sum = 0
+numbers = [1, 2, 4, 2]
+numbers.each do |number|
+  sum = number + sum
+end
+
+p sum
+
